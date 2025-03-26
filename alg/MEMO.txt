@@ -1,0 +1,24 @@
+・作用は右作用である
+　・act(x, a) = x^a 形式
+　・x^(ab) = (x^a)^b が必要
+　・つまり、作用素モノイドで後から作用するものを右側からかけること
+
+・ActedMonoid：作用素付きモノイド
+　・モノイド A がモノイド X に右作用
+・ActedSet：
+　・モノイド A が集合 S に右作用
+　・ただし、任意の集合は op(a,b) = b などによってモノイドにできるので、あまり意味がないかもしれない
+
+・実用上、ActedMonoid においては X の可換性を仮定してよい気がする
+　→ うそで、https://codeforces.com/contest/1076/problem/G では MX が非可換だった
+
+・Monoid への要請
+　・value_type
+　・commute
+　・unit
+　・op
+
+・ActedMonoid への要請
+　・Monoid_A
+　・Monoid_X
+　・act
